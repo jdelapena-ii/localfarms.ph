@@ -1,5 +1,8 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Header from '../components/Header';
+import { AirbnbExample } from '../components/AirBnbExample';
+import { Flex } from '@chakra-ui/react'
+
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
 
       <main>
         <Header />
+        <Flex>
+          <AirbnbExample />
+        </Flex>
       </main>  
     </div>
   )
